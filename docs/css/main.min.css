@@ -493,6 +493,91 @@ button {
   }
 }
 
+.accordion__item {
+  border-bottom: 1px solid var(--clr-blue-light);
+}
+
+.accordion__control {
+  padding: 30px 0 35px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .accordion__control {
+    padding: 20px 0 35px;
+  }
+}
+
+.accordion__title {
+  font-family: "BebasNeue", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.47;
+  text-align: left;
+  flex: 0 0 90%;
+}
+@media screen and (max-width: 768px) {
+  .accordion__title {
+    flex: 0 0 244px;
+  }
+}
+
+.accordion__icon {
+  flex: 0 0 37px;
+  width: 37px;
+  height: 38px;
+  border-radius: 6px;
+  background-color: var(--clr-blue-light);
+  position: relative;
+}
+.accordion__icon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 19px;
+  height: 11px;
+  background-image: url("../img/accordion-down.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.3s ease-out;
+}
+
+.open .accordion__icon::after {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.accordion__content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  will-change: max-height;
+  transition: all 0.3s ease-out;
+  box-sizing: content-box;
+}
+@media screen and (max-width: 992px) {
+  .accordion__content {
+    font-size: 16px;
+  }
+}
+
+.accordion__content a {
+  color: var(--clr-blue);
+}
+
+.open .accordion__content {
+  opacity: 1;
+  padding-bottom: 35px;
+}
+
+.accordion__content > p + p {
+  margin-top: 20px;
+}
+
 .br-desktop {
   display: block;
 }
@@ -882,6 +967,169 @@ button {
   }
 }
 
+.doubt {
+  background-color: var(--clr-blue-dark);
+  padding: 50px 0;
+}
+@media screen and (max-width: 768px) {
+  .doubt {
+    padding: 60px 0 20px;
+  }
+}
+
+.doubt__wrapper {
+  max-width: 954px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .doubt__wrapper {
+    max-width: 320px;
+    flex-direction: column;
+    justify-content: initial;
+  }
+}
+
+.doubt__left {
+  flex: 1 1 52%;
+  color: var(--clr-white);
+}
+@media screen and (max-width: 768px) {
+  .doubt__left {
+    flex: initial;
+  }
+}
+
+.doubt__right {
+  flex: 1 1 44%;
+  margin-left: 50px;
+}
+@media screen and (max-width: 1030px) {
+  .doubt__right {
+    flex-basis: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .doubt__right {
+    flex: initial;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+.doubt__title {
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 1030px) {
+  .doubt__title {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .doubt__title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+}
+
+.doubt__desc {
+  line-height: 1.4;
+  margin-bottom: 42px;
+}
+@media screen and (max-width: 768px) {
+  .doubt__desc {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.doubt__desc p + p {
+  margin-top: 20px;
+}
+
+.doubt__btn {
+  max-width: 300px;
+}
+@media screen and (max-width: 768px) {
+  .doubt__btn {
+    max-width: 100%;
+  }
+}
+
+.doubt__img {
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  max-width: 400px;
+  height: 375px;
+}
+@media screen and (max-width: 768px) {
+  .doubt__img {
+    height: 191px;
+  }
+}
+
+.doubt__img::after {
+  position: absolute;
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.doubt__img::after {
+  background-image: url("../img/doubt__decor.svg");
+  width: 299px;
+  height: 192px;
+  bottom: -2px;
+  right: -2px;
+}
+@media screen and (max-width: 768px) {
+  .doubt__img::after {
+    width: 157px;
+    height: 100px;
+  }
+}
+
+.doubt__img-elem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.faq {
+  padding: 55px 0;
+  background-color: var(--clr-white);
+}
+@media screen and (max-width: 768px) {
+  .faq {
+    padding: 30px 0;
+  }
+}
+
+.faq__title {
+  text-align: center;
+  margin-bottom: 6px;
+}
+@media screen and (max-width: 768px) {
+  .faq__title {
+    margin-bottom: 20px;
+  }
+}
+
+.faq__list.accordion {
+  max-width: 714px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .faq__list.accordion {
+    max-width: 320px;
+  }
+}
+
 .how {
   background-color: var(--clr-blue-light);
   padding: 66px 0 71px;
@@ -1204,6 +1452,98 @@ button {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.partners {
+  padding: 53px 0;
+}
+@media screen and (max-width: 768px) {
+  .partners {
+    padding: 30px 0;
+  }
+}
+
+.partners__wrapper {
+  max-width: 1190px;
+}
+@media screen and (max-width: 992px) {
+  .partners__wrapper {
+    max-width: 552px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .partners__wrapper {
+    max-width: 320px;
+  }
+}
+
+.partners__title {
+  text-align: center;
+  margin-bottom: 36px;
+}
+@media screen and (max-width: 768px) {
+  .partners__title {
+    margin-bottom: 20px;
+  }
+}
+
+.partners__slider {
+  position: relative;
+}
+
+.partners__slide {
+  width: 190px;
+  height: 119px;
+}
+
+.partners__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .partners__btns {
+    position: relative;
+    max-width: 80px;
+    margin: 16px auto 0;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+  }
+}
+
+.partners__btn-prev.swiper__btn,
+.partners__btn-next.swiper__btn {
+  position: absolute;
+  top: 45px;
+}
+@media screen and (max-width: 768px) {
+  .partners__btn-prev.swiper__btn,
+  .partners__btn-next.swiper__btn {
+    position: relative;
+    top: 0;
+  }
+}
+
+.partners__btn-prev.swiper__btn {
+  left: -36px;
+}
+@media screen and (max-width: 768px) {
+  .partners__btn-prev.swiper__btn {
+    left: 0;
+  }
+}
+
+.partners__btn-next.swiper__btn {
+  right: -36px;
+}
+@media screen and (max-width: 768px) {
+  .partners__btn-next.swiper__btn {
+    right: 0;
+  }
 }
 
 .profitable {
