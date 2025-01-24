@@ -353,6 +353,7 @@ template {
   --clr-yellow: #FBD405;
   --clr-blue-white: #185AAA;
   --clr-blue-dark: #0A0B16;
+  --clr-quiz: #171931;
 }
 
 *,
@@ -1476,6 +1477,25 @@ button {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.estimation {
+  padding: 66px 0 108px;
+  min-height: 699px;
+  background-image: url("../img/estimation-bg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.estimation__wrapper {
+  max-width: 505px;
+  margin: 0 auto;
+}
+
+.estimation__title {
+  text-align: center;
+  margin-bottom: 36px;
 }
 
 .faq {
@@ -2776,6 +2796,48 @@ button {
   .points__btn {
     max-width: 100%;
   }
+}
+
+.quiz {
+  background-color: var(--clr-quiz);
+  border-radius: 6px;
+  padding: 30px;
+}
+
+.quiz__btns {
+  margin-left: -4px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.quiz__btn {
+  font-size: 12px;
+  width: calc(20% - 4px);
+  font-family: "ltsuperior", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: var(--clr-white);
+  background-color: transparent;
+  border: 1px solid #282B4E;
+  margin-left: 4px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.quiz__btn.active {
+  color: var(--clr-quiz);
+  background-color: var(--clr-yellow);
+  border: 1px solid var(--clr-yellow);
+}
+
+.quiz__content {
+  color: var(--clr-white);
+  min-height: 381px;
+  display: none;
+}
+
+.quiz__content.active {
+  display: block;
 }
 
 .socials {
