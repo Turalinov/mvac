@@ -47,49 +47,83 @@
     <div class="wrapper__content">
 
 
-      <header class="header">
+      <header class="header active">
   <div class="container">
-    <!-- logo  -->
-    <div class="header__logo logo">
-      <a href="index.html" class="logo__link">
-        <img src="img/logo.svg" class="logo__img" width="133" height="54">
-      </a>
+
+
+    <!-- mobile -->
+    <div class="header__mobile">
+      <!-- logo  -->
+      <div class="header__logo logo">
+        <a href="index.html" class="logo__link">
+          <img src="img/logo-header.svg" class="logo__img" width="133" height="54">
+        </a>
+      </div>
+
+      <div class="header__btns">
+        <!-- toggle  -->
+        <div class="header__toggle toggle ">
+          <button class="toggle__button">
+            <span></span>
+          </button>
+        </div>
+        <a href="#" class="header__estimation">Estimation Gratuite</a>
+      </div>
     </div>
-    <!-- google-review  -->
-    <a href="#" class="header__google-review">
-      4,9/5 sur Google Reviews
-    </a>
+
     <!-- dropdown -->
     <div class="header__dropdown">
       <div class="header__dropdown-inner">
+        <!-- logo  -->
+        <div class="header__logo logo">
+          <a href="index.html" class="logo__link">
+            <img src="img/logo.svg" class="logo__img" width="133" height="54">
+          </a>
+        </div>
+
         <!-- menus -->
         <nav class="header__menu menu">
           <ul>
             <li>
-              <a href="#solution">Défis RH</a>
+              <a href="#">Estimer mon véhicule</a>
             </li>
             <li>
-              <a href="#decision">Solutions</a>
+              <a href="#">Comment ça marche ?</a>
             </li>
             <li>
-              <a href="#cases">Business cases</a>
+              <a href="#">Témoignages Clients</a>
             </li>
             <li>
-              <a href="#reviews">Témoignages</a>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Devenir partenaire</a>
             </li>
           </ul>
         </nav>
+
+        <!-- button consultation -->
+        <a href="#" class="header__btn btn ">Contacter un conseiller</a>
+
+        <!-- socials -->
+        <div class="header__socials socials">
+
+          <div class="social social--insagram">
+            <a href="#" class="social__link" target="_blank">Insagram</a>
+          </div>
+          <div class="social social--youtube">
+            <a href="#" class="social__link" target="_blank">Youtube</a>
+          </div>
+
+        </div>
+
+
       </div>
     </div>
-    <!-- instagram -->
-    <a href="#" class="header__inst" target="_blank">
-      <img class="header__inst-link" src="img/instagram.svg" alt="Instagram icon">
-    </a>
-    <!-- button consultation -->
-    <a href="#" class="btn header__btn">Contacter un conseiller</a>
+
+
   </div>
 </header>
-
       <div class="breadcrumbs">
   <div class="container">
     <ul class="breadcrumbs__list">
@@ -429,17 +463,45 @@
 
             </div>
             <!-- item  5-->
-            <div class="quiz__content active">
+            <div class="quiz__content quiz__content--res active">
               <!-- title  -->
               <h3 class="quiz__subtitle">
-                Votre estimation est prête ! <span>✅</span>
+                <span>
+                  Votre estimation est prête !
+                </span>
+                <span></span>
               </h3>
 
               <div class="quiz__res">
-
+                <span class="quiz__indicator">
+                  <div class="quiz__indicator-center">
+                    <span class="quiz__indicator-price">
+                      <span>15 777</span> €
+                    </span>
+                    <span class="quiz__indicator-label">
+                      Prix Moyen
+                    </span>
+                  </div>
+                  <div class="quiz__indicator-left">
+                    <span class="quiz__indicator-price">
+                      <span>14 155</span> €
+                    </span>
+                    <span class="quiz__indicator-label">
+                      PrixBas
+                    </span>
+                  </div>
+                  <div class="quiz__indicator-right">
+                    <span class="quiz__indicator-price">
+                      <span>20 645</span> €
+                    </span>
+                    <span class="quiz__indicator-label">
+                      Prix Élevé
+                    </span>
+                  </div>
+                </span>
               </div>
 
-              <div class="quiz__res-desc">Vous souhaitez en savoir plus sur la revente de votre véhicule ou obtenir
+              <div class="quiz__desc">Vous souhaitez en savoir plus sur la revente de votre véhicule ou obtenir
                 une offre ferme ? Contactez-nous pour avancer
                 facilement
               </div>
