@@ -718,11 +718,21 @@ button {
   cursor: pointer;
   border-bottom: 1px solid #FFFFFF;
   padding: 10px 0 16px;
-  color: var(--clr-gray-dark);
+  color: var(--clr-white);
   font-size: 14px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.custom-select-modele .selected-item {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.custom-select-modele .selected-item.available {
+  pointer-events: initial;
+  opacity: 1;
 }
 
 .custom-select .selected-item::after {
@@ -749,6 +759,22 @@ button {
   left: 0;
   z-index: 100;
   width: 100%;
+  overflow-y: auto;
+  /* Вертикальная прокрутка */
+  max-height: 200px;
+  /* Максимальная высота блока */
+}
+
+/* Стилизация прокрутки внутри .custom-scroll */
+.custom-select .all-items::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--clr-blue);
+}
+
+.custom-select .all-items::-webkit-scrollbar-thumb {
+  background: var(--clr-white);
+  /* Зелёный ползунок */
+  border-radius: 4px;
 }
 
 .custom-select .all-items-hide {
@@ -762,7 +788,7 @@ button {
 .custom-select .item {
   color: var(--clr-gray-dark);
   font-size: 14px;
-  color: #7c7272;
+  color: var(--clr-white);
   background-color: var(--clr-quiz);
   border-bottom: 1px solid #e2e2e2;
   cursor: pointer;
@@ -4049,6 +4075,35 @@ button {
   transform: rotate(180deg);
 }
 
+.notfound {
+  padding: 200px 0 150px;
+}
+
+.notfound__content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 992px) {
+  .notfound__content {
+    max-width: 400px;
+  }
+}
+
+.notfound__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.notfound__btn {
+  max-width: 400px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .notfound__btn {
+    padding: 20px;
+  }
+}
+
 .points {
   padding: 55px 0;
 }
@@ -4245,6 +4300,55 @@ button {
   .points__btn {
     max-width: 100%;
   }
+}
+
+.politics {
+  padding: 55px 0;
+}
+@media screen and (max-width: 768px) {
+  .politics {
+    font-size: 16px;
+    padding: 25px 0 50px;
+  }
+}
+
+.politics p {
+  margin: 20px 0;
+}
+
+.politics h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1180px) {
+  .politics h2 {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .politics h2 {
+    font-size: 30px;
+  }
+}
+
+.politics h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.politics ul li {
+  list-style: initial;
+  margin-left: 15px;
+}
+
+.politics ul li + li {
+  margin-top: 15px;
+}
+
+.politics a {
+  font-family: "ltsuperior", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--clr-blue);
 }
 
 .quiz {
@@ -5032,6 +5136,55 @@ button {
 @media screen and (max-width: 768px) {
   .tell__form.form {
     height: initial;
+  }
+}
+
+.tell .selected-item.loaded {
+  color: var(--clr-white);
+}
+
+.thanks {
+  padding: 150px 0 150px;
+}
+
+.thanks__content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 992px) {
+  .thanks__content {
+    max-width: 400px;
+  }
+}
+
+.thanks__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.thanks__desc {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 992px) {
+  .thanks__desc {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .thanks__desc {
+    font-size: 16px;
+  }
+}
+
+.thanks__btn {
+  max-width: 200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .thanks__btn {
+    padding: 20px;
   }
 }
 
