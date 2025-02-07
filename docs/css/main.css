@@ -4648,15 +4648,21 @@ button {
   background-color: transparent;
 }
 
+.quiz__input--mileage {
+  padding-bottom: 12px;
+  width: 100%;
+  border-bottom: 1px solid #FFFFFF;
+}
+
 .quiz__input::placeholder,
 .quiz__input::placeholder {
   color: var(--clr-gray-dark);
   opacity: 1;
 }
 
-.quiz__input::-ms-input-placeholder,
-.quiz__input::-ms-input-placeholder {
-  color: var(--clr-gray-dark);
+.quiz__input--mileage::-ms-input-placeholder,
+.quiz__input--mileage::-ms-input-placeholder {
+  color: var(--clr-white);
 }
 
 .quiz__res {

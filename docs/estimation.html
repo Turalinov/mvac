@@ -172,7 +172,7 @@
             </button>
           </div>
 
-          <form class="quiz__contents">
+          <div class="quiz__contents">
             <!-- item  1-->
             <div class="quiz__content  active">
               <!-- title  -->
@@ -199,13 +199,9 @@
                   <div class="quiz__col">
 
                     <!-- select  -->
-                    <div class="quiz__select custom-select">
+                    <div class="quiz__select custom-select custom-select-year">
                       <select name="mark">
-                        <option value="" disabled>Marque</option>
-                        <option value="Marque1">Marque 1</option>
-                        <option value="Marque2">Marque 2</option>
-                        <option value="Marque3">Marque 3</option>
-                        <option value="Marque4">Marque 4</option>
+                        <option value="" disabled>Année</option>
                       </select>
                     </div>
 
@@ -228,31 +224,22 @@
                   <!-- col -->
                   <div class="quiz__col">
 
-                    <!-- select  -->
-                    <div class="quiz__select custom-select">
-                      <select name="mark">
-                        <option value="" disabled>Marque</option>
-                        <option value="Marque1">Marque 1</option>
-                        <option value="Marque2">Marque 2</option>
-                        <option value="Marque3">Marque 3</option>
-                        <option value="Marque4">Marque 4</option>
-                      </select>
-                    </div>
-
+                    <input type="text" class="quiz__input quiz__input--mileage" name="mileage"
+                      placeholder="Kilométrage">
                   </div>
                 </div>
 
               </div>
 
               <!-- error  -->
-              <div class="quiz__error active">
-                Error text custom error
+              <div class="quiz__error quiz__error-1">
+                _
               </div>
 
               <div class="quiz__desc">
                 Continuez, nous y sommes presque !
               </div>
-              <button class="quiz__button">
+              <button class="quiz__button quiz__button-1">
                 Suivant
               </button>
 
@@ -501,7 +488,7 @@
               <button class="btn quiz__res-btn">Contacter un conseiller</button>
 
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
