@@ -4566,7 +4566,7 @@ button {
   display: flex;
 }
 
-.quiz__radioб,
+.quiz__radio,
 .quiz__checkbox {
   display: none;
 }
@@ -4623,12 +4623,16 @@ button {
   color: var(--clr-white);
   background-color: initial;
   border: none;
-  border-bottom: 1px solid #38384B;
+  border-bottom: 1px solid white;
 }
 @media screen and (max-width: 768px) {
   .quiz__checkbox-input {
     width: 70%;
   }
+}
+
+.quiz__checkbox-input:disabled {
+  border-bottom: 1px solid #38384B;
 }
 
 .quiz__inputs {
